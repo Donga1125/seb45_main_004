@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * 클라에서 구독하는 요청을 보내면,
- * 컨트롤러에서 SseEmitter를 만들어주는 서비스 레이어를 통해 전달 받은 SseEmitter를 반환한다..
+ * 컨트롤러에서 SseEmitter를 만들어주는 서비스 레이어를 통해 전달 받은 SseEmitter를 반환한다.
  */
 @RestController
 @RequestMapping("/members/alrams")
