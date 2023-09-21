@@ -76,5 +76,6 @@ jobs:
                 -e KAKAO_CLIENT_SECRET=${{secrets.KAKAO_CLIENT_SECRET}} \
                 -e MAIL_USERNAME=${{secrets.MAIL_USERNAME}} \
                 -e MAIL_PASSWORD=${{secrets.MAIL_PASSWORD}} \
+                -e SPRING_PROFILES_ACTIVE=dev \
                 ${{secrets.DOCKER_HUB_USERNAME}}/celebee-dev:${GITHUB_SHA::7}'
             ]"
