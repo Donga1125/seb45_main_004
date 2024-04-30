@@ -31,7 +31,6 @@ import java.util.stream.Collectors;
 @Transactional
 @RestController
 @RequestMapping("/members")
-@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 @Slf4j
 public class MemberController {
     private final MemberService memberService;

@@ -19,7 +19,6 @@ import java.util.Optional;
 @Slf4j
 @RestController
 @RequestMapping("/boards")
-@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 @RequiredArgsConstructor
 @Validated
 public class BoardController {

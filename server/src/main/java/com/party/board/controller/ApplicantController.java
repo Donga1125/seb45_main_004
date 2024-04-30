@@ -16,7 +16,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping()
-@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 @RequiredArgsConstructor
 public class ApplicantController {
 

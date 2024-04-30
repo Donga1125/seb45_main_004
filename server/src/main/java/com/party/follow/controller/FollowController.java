@@ -15,7 +15,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/follows")
-@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 public class FollowController {
 
     private final FollowService followService;

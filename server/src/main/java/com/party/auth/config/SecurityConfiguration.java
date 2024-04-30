@@ -54,6 +54,7 @@ public class SecurityConfiguration {
                 .apply(new CustomFilterConfigurer())
                 .and()
                 .authorizeHttpRequests(authorize -> authorize
+                        .antMatchers(HttpMethod.OPTIONS,"/**/*").permitAll()
                         .antMatchers(HttpMethod.POST, "/*/members").permitAll()
                         .antMatchers(HttpMethod.POST, "/boards/new-boards").hasRole("USER")
                         .antMatchers(HttpMethod.GET, "/members/me").hasRole("USER")
