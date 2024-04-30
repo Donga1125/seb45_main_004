@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/likes")
+@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 public class BoardLikeController {
 
     private final BoardLikeService boardLikeService;

@@ -23,6 +23,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/members/alrams")
+@CrossOrigin(origins = {"https://celebee.kro.kr", "https://www.celebee.kro.kr"})
 @RequiredArgsConstructor
 public class AlarmController {
     private final AlarmService alarmService;
