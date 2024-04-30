@@ -40,8 +40,8 @@ jobs:
           docker login -u ${{secrets.DOCKER_HUB_USERNAME}} -p ${{secrets.DOCKER_HUB_PASSWORD}}
           cd server
           docker build -t celebee-server .
-          docker tag celebee-server ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v3
-          docker push ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v3
+          docker tag celebee-server ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v4
+          docker push ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v4
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -67,5 +67,5 @@ jobs:
           script: |
             whoami
             sudo docker login -u ${{secrets.DOCKER_HUB_USERNAME}} -p ${{secrets.DOCKER_HUB_PASSWORD}}
-            sudo docker pull ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v3
+            sudo docker pull ${{secrets.DOCKER_HUB_USERNAME}}/celebee-server:v4
             sudo docker-compose -f ./docker-compose.yml up -d
